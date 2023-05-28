@@ -66,7 +66,12 @@ Returns users of department and his tasks of Bitrix24.
 ```
 
 
-#### Create a build from Dockerfile (Example POM)
+#### Create a build (and change name of JAR) for use in Docker container (Example POM)
+
+```bash
+   mvn clean package
+```
+
 ```xml
 	<build>
 		<plugins>
