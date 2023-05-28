@@ -66,7 +66,7 @@ Returns users of department and his tasks of Bitrix24.
 ```
 
 
-### Create a build for Dockerfile (Example POM)
+### Create a build from Dockerfile (Example POM)
 ```xml
 	<build>
 		<plugins>
