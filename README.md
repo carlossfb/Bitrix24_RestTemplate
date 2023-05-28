@@ -1,25 +1,25 @@
 # Getting Started
 
-### Compile application
+#### Compile application
 
 ```bash
     mvn clean package
 ```
 
-### Create a docker image from Dockerfile
+#### Create a docker image from Dockerfile
 
 ```bash
     docker build  -t bitrix24-consume_api:1.0.0 .
 ```
-### Run application
+#### Run application
 
 ```bash
     docker run --name bitrix24 -p 8080:8080  -d bitrix24-consume_api:1.0.0
 ```
 
-## Endpoints
+### Endpoints
 
-### /api/
+#### /api/
 
 Returns departaments of the Bitrix24 account.
 
@@ -46,7 +46,7 @@ Returns departaments of the Bitrix24 account.
     }
 ```
 
-### /api/department/{id}
+#### /api/department/{id}
 
 Returns users of department and his tasks of Bitrix24.
 ```json
@@ -66,7 +66,7 @@ Returns users of department and his tasks of Bitrix24.
 ```
 
 
-### Create a build from Dockerfile (Example POM)
+#### Create a build from Dockerfile (Example POM)
 ```xml
 	<build>
 		<plugins>
