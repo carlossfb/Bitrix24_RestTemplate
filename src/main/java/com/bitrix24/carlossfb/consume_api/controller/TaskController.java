@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bitrix24.carlossfb.consume_api.DTO.ObjectDepartament;
+import com.bitrix24.carlossfb.consume_api.DTO.ObjectDepartment;
 import com.bitrix24.carlossfb.consume_api.DTO.ObjectUser;
 import com.bitrix24.carlossfb.consume_api.service.DepartmentService;
 import com.bitrix24.carlossfb.consume_api.service.UserService;
@@ -20,7 +20,7 @@ public class TaskController {
     UserService userService;
     
     @Autowired
-    DepartmentService departamentService;
+    DepartmentService departmentService;
     
     // @GetMapping("/task")
     // public ResponseEntity<ObjectTask> getTasks(){
@@ -30,8 +30,8 @@ public class TaskController {
     // }
 
     @GetMapping("/")
-    public ResponseEntity<ObjectDepartament> getDepartment(){
-      ObjectDepartament response =  departamentService.getDepartament();
+    public ResponseEntity<ObjectDepartment> getDepartment(){
+      ObjectDepartment response =  departmentService.getDepartment();
       return ResponseEntity.ok(response);
     }
     @GetMapping("/department/{dep}")

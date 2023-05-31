@@ -17,7 +17,7 @@ public class TaskService {
         String today = format.myDateFormat(new Date());
 
         return new RestTemplate()
-            .getForEntity("https://xxxxxxxxx.bitrix24.com/rest/1/xxxxxxxxx/task.elapseditem.getlist.json?order[TASK_ID]=asc&filter[<CREATED_DATE]="+today+"&filter[USER_ID]="+userId, ObjectTask.class).getBody();
+            .getForEntity("https://xxxxx-xxxxx.bitrix24.com/rest/1/xxxxxxxx/task.elapseditem.getlist.json?order[TASK_ID]=asc&filter[<CREATED_DATE]="+today+"&filter[USER_ID]="+userId, ObjectTask.class).getBody();
     }
 
 

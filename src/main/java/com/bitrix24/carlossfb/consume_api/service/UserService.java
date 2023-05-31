@@ -17,7 +17,7 @@ public class UserService {
     TaskService taskService;
 
     public ObjectUser getUsers(Number ufDepartament){
-        ObjectUser user = new RestTemplate().getForEntity("https://xxxxxxxxx.bitrix24.com/rest/1/xxxxxxxxx/user.get.json?filter[UF_DEPARTMENT]="+ufDepartament, ObjectUser.class).getBody();
+        ObjectUser user = new RestTemplate().getForEntity("xxxxx-xxxxx.bitrix24.com/rest/1/xxxxxxxx/user.get.json?filter[UF_DEPARTMENT]="+ufDepartament, ObjectUser.class).getBody();
 
         for(int i = 0; user.getResult().length > i ; i++){
             User[] userArr = user.getResult();

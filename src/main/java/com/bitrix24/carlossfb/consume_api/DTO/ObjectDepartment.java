@@ -5,6 +5,6 @@ import com.bitrix24.carlossfb.consume_api.model.Department;
 import lombok.Data;
 
 @Data
-public class ObjectDepartament {
+public class ObjectDepartment {
     Department[] result;
 }
