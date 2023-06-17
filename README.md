@@ -71,6 +71,7 @@ Returns users of department and his tasks of Bitrix24.
 ```bash
    mvn clean package
 ```
+#### (Example POM)
 
 ```xml
 	<build>
